@@ -117,6 +117,7 @@ html body header .header-content button {
   border: none;
   border-bottom: 2px solid gray;
   transition: 0.25s;
+  cursor: pointer;
 }
 html body header .header-content button:hover {
   background-color: rgba(128, 128, 128, 0.5);
