@@ -500,6 +500,59 @@ html body main .home .opening-animation .opening-animation-bottom-left .nine {
   will-change: animation;
   opacity: 1;
 }
+html body main .home .home-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+html body main .home .home-content .text-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 100%;
+}
+html body main .home .home-content .text-area .top {
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  line-height: 50px;
+  font-size: 1.5rem;
+  letter-spacing: 10px;
+  word-spacing: 15px;
+}
+html body main .home .home-content .text-area .border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 1px;
+  background-color: black;
+}
+html body main .home .home-content .text-area .bottom {
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  line-height: 50px;
+  font-size: 1rem;
+  letter-spacing: 10px;
+}
 html body .black {
   position: absolute;
   top: 0;
