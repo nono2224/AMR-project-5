@@ -138,7 +138,14 @@ html body main {
           animation-timing-function: cubic-bezier(0.14, 0.74, 0.54, 0.99);
   will-change: animation;
 }
-html body main .opening-animation {
+html body main .home {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+html body main .home .opening-animation {
   position: absolute;
   top: 0;
   left: 0;
@@ -146,7 +153,7 @@ html body main .opening-animation {
   height: 100%;
   perspective: 1000px;
 }
-html body main .opening-animation .opening-animation-top-right {
+html body main .home .opening-animation .opening-animation-top-right {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -163,7 +170,7 @@ html body main .opening-animation .opening-animation-top-right {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .opening-animation .opening-animation-top-right .one {
+html body main .home .opening-animation .opening-animation-top-right .one {
   position: absolute;
   transform-origin: center;
   top: 50px;
@@ -181,7 +188,7 @@ html body main .opening-animation .opening-animation-top-right .one {
   will-change: animation;
   opacity: 1;
 }
-html body main .opening-animation .opening-animation-top-right .two {
+html body main .home .opening-animation .opening-animation-top-right .two {
   position: absolute;
   transform-origin: center;
   top: 30px;
@@ -198,7 +205,7 @@ html body main .opening-animation .opening-animation-top-right .two {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .opening-animation .opening-animation-top-right .three {
+html body main .home .opening-animation .opening-animation-top-right .three {
   position: absolute;
   transform-origin: center;
   top: 4px;
@@ -216,7 +223,7 @@ html body main .opening-animation .opening-animation-top-right .three {
   will-change: animation;
   opacity: 1;
 }
-html body main .opening-animation .opening-animation-top-right .four {
+html body main .home .opening-animation .opening-animation-top-right .four {
   position: absolute;
   transform-origin: center;
   top: -386px;
@@ -234,7 +241,7 @@ html body main .opening-animation .opening-animation-top-right .four {
   will-change: animation;
   opacity: 1;
 }
-html body main .opening-animation .opening-animation-top-right .five {
+html body main .home .opening-animation .opening-animation-top-right .five {
   position: absolute;
   transform-origin: center;
   top: -396px;
@@ -252,7 +259,7 @@ html body main .opening-animation .opening-animation-top-right .five {
   will-change: animation;
   opacity: 1;
 }
-html body main .opening-animation .opening-animation-top-right .six {
+html body main .home .opening-animation .opening-animation-top-right .six {
   position: absolute;
   transform-origin: center;
   top: -106px;
@@ -268,7 +275,7 @@ html body main .opening-animation .opening-animation-top-right .six {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .opening-animation .opening-animation-top-right .seven {
+html body main .home .opening-animation .opening-animation-top-right .seven {
   position: absolute;
   transform-origin: center;
   top: 279px;
@@ -285,7 +292,7 @@ html body main .opening-animation .opening-animation-top-right .seven {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .opening-animation .opening-animation-top-right .eight {
+html body main .home .opening-animation .opening-animation-top-right .eight {
   position: absolute;
   transform-origin: center;
   top: 284px;
@@ -302,7 +309,7 @@ html body main .opening-animation .opening-animation-top-right .eight {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .opening-animation .opening-animation-top-right .nine {
+html body main .home .opening-animation .opening-animation-top-right .nine {
   position: absolute;
   transform-origin: center;
   top: -19px;
@@ -320,7 +327,7 @@ html body main .opening-animation .opening-animation-top-right .nine {
   will-change: animation;
   opacity: 1;
 }
-html body main .opening-animation .opening-animation-bottom-left {
+html body main .home .opening-animation .opening-animation-bottom-left {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -337,7 +344,7 @@ html body main .opening-animation .opening-animation-bottom-left {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .opening-animation .opening-animation-bottom-left .one {
+html body main .home .opening-animation .opening-animation-bottom-left .one {
   position: absolute;
   transform-origin: center;
   bottom: -171px;
@@ -354,7 +361,7 @@ html body main .opening-animation .opening-animation-bottom-left .one {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .opening-animation .opening-animation-bottom-left .two {
+html body main .home .opening-animation .opening-animation-bottom-left .two {
   position: absolute;
   transform-origin: center;
   bottom: -128px;
@@ -371,7 +378,7 @@ html body main .opening-animation .opening-animation-bottom-left .two {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .opening-animation .opening-animation-bottom-left .three {
+html body main .home .opening-animation .opening-animation-bottom-left .three {
   position: absolute;
   transform-origin: center;
   bottom: 334px;
@@ -388,7 +395,7 @@ html body main .opening-animation .opening-animation-bottom-left .three {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .opening-animation .opening-animation-bottom-left .four {
+html body main .home .opening-animation .opening-animation-bottom-left .four {
   position: absolute;
   transform-origin: center;
   bottom: 172px;
@@ -405,7 +412,7 @@ html body main .opening-animation .opening-animation-bottom-left .four {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .opening-animation .opening-animation-bottom-left .five {
+html body main .home .opening-animation .opening-animation-bottom-left .five {
   position: absolute;
   transform-origin: center;
   bottom: 228px;
@@ -422,7 +429,7 @@ html body main .opening-animation .opening-animation-bottom-left .five {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .opening-animation .opening-animation-bottom-left .six {
+html body main .home .opening-animation .opening-animation-bottom-left .six {
   position: absolute;
   transform-origin: center;
   bottom: -2px;
@@ -439,7 +446,7 @@ html body main .opening-animation .opening-animation-bottom-left .six {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .opening-animation .opening-animation-bottom-left .seven {
+html body main .home .opening-animation .opening-animation-bottom-left .seven {
   position: absolute;
   transform-origin: center;
   bottom: 90px;
@@ -456,7 +463,7 @@ html body main .opening-animation .opening-animation-bottom-left .seven {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .opening-animation .opening-animation-bottom-left .eight {
+html body main .home .opening-animation .opening-animation-bottom-left .eight {
   position: absolute;
   transform-origin: center;
   bottom: -64px;
@@ -474,7 +481,7 @@ html body main .opening-animation .opening-animation-bottom-left .eight {
   will-change: animation;
   opacity: 1;
 }
-html body main .opening-animation .opening-animation-bottom-left .nine {
+html body main .home .opening-animation .opening-animation-bottom-left .nine {
   position: absolute;
   transform-origin: center;
   bottom: 67px;

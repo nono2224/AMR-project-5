@@ -127,277 +127,284 @@ html {
             animation-duration: 3s;
             animation-timing-function: cubic-bezier(.14, .74, .54, .99);
             will-change: animation;
-            .opening-animation {
+            .home {
                 position: absolute;
-                top: 0;
-                left: 0;
                 width: 100%;
                 height: 100%;
-                perspective: 1000px;
-                .opening-animation-top-right {
+                top: 0;
+                left: 0;
+                .opening-animation {
                     position: absolute;
-                    width: 100%;
-                    height: 100%;
                     top: 0;
-                    right: 0;
-                    transform: translate3d(0, 0, 0);
-                    animation-name: opening-animation-top-right;
-                    animation-delay: 0.5s;
-                    animation-duration: 3s;
-                    animation-timing-function: cubic-bezier(.13, .47, .54, .99);
-                    will-change: animation;
-                    .one {
-                        position: absolute;
-                        transform-origin: center;
-                        top: 50px;
-                        right: 20px;
-                        width: 100px;
-                        transform: rotateZ(45deg);
-                        animation-name: opening-animation-top-right-one;
-                        animation-delay: 0.5s;
-                        animation-duration: 3s;
-                        animation-timing-function: cubic-bezier(.13, .47, .54, .99);
-                        will-change: animation;
-                        opacity: 1;
-                    }
-                    .two {
-                        position: absolute;
-                        transform-origin: center;
-                        top: 30px;
-                        right: -60px;
-                        width: 54px;
-                        transform: rotateZ(45deg);
-                        animation-name: opening-animation-top-right-two;
-                        animation-delay: 0.5s;
-                        animation-duration: 3s;
-                        animation-timing-function: cubic-bezier(.13, .47, .54, .99);
-                        will-change: animation;
-                    }
-                    .three {
-                        position: absolute;
-                        transform-origin: center;
-                        top: 4px;
-                        right: 84px;
-                        width: 139px;
-                        transform: rotateZ(45deg);
-                        animation-name: opening-animation-top-right-three;
-                        animation-delay: 0.5s;
-                        animation-duration: 3s;
-                        animation-timing-function: cubic-bezier(.13, .47, .54, .99);
-                        will-change: animation;
-                        opacity: 1;
-                    }
-                    .four {
-                        position: absolute;
-                        transform-origin: center;
-                        top: -386px;
-                        right: -124px;
-                        width: 139px;
-                        transform: rotateZ(45deg);
-                        animation-name: opening-animation-top-right-four;
-                        animation-delay: 0.5s;
-                        animation-duration: 3s;
-                        animation-timing-function: cubic-bezier(.13, .47, .54, .99);
-                        will-change: animation;
-                        opacity: 1;
-                    }
-                    .five {
-                        position: absolute;
-                        transform-origin: center;
-                        top: -396px;
-                        right: -21px;
-                        width: 139px;
-                        transform: rotateZ(45deg);
-                        animation-name: opening-animation-top-right-five;
-                        animation-delay: 0.5s;
-                        animation-duration: 3s;
-                        animation-timing-function: cubic-bezier(.13, .47, .54, .99);
-                        will-change: animation;
-                        opacity: 1;
-                    }
-                    .six {
-                        position: absolute;
-                        transform-origin: center;
-                        top: -106px;
-                        right: 206px;
-                        width: 229px;
-                        animation-name: opening-animation-top-right-six;
-                        animation-delay: 0.5s;
-                        animation-duration: 3s;
-                        animation-timing-function: cubic-bezier(.13, .47, .54, .99);
-                        will-change: animation;
-                    }
-                    .seven {
-                        position: absolute;
-                        transform-origin: center;
-                        top: 279px;
-                        right: 47px;
-                        width: 78px;
-                        transform: rotateZ(45deg);
-                        animation-name: opening-animation-top-right-seven;
-                        animation-delay: 0.5s;
-                        animation-duration: 3s;
-                        animation-timing-function: cubic-bezier(.13, .47, .54, .99);
-                        will-change: animation;
-                    }
-                    .eight {
-                        position: absolute;
-                        transform-origin: center;
-                        top: 284px;
-                        right: 214px;
-                        width: 61px;
-                        transform: rotateZ(45deg);
-                        animation-name: opening-animation-top-right-eight;
-                        animation-delay: 0.5s;
-                        animation-duration: 3s;
-                        animation-timing-function: cubic-bezier(.13, .47, .54, .99);
-                        will-change: animation;
-                    }
-                    .nine {
-                        position: absolute;
-                        transform-origin: center;
-                        top: -19px;
-                        right: 246px;
-                        width: 41px;
-                        transform: rotateZ(45deg);
-                        animation-name: opening-animation-top-right-nine;
-                        animation-delay: 0.5s;
-                        animation-duration: 3s;
-                        animation-timing-function: cubic-bezier(.13, .47, .54, .99);
-                        will-change: animation;
-                        opacity: 1;
-                    }
-                }
-                .opening-animation-bottom-left {
-                    position: absolute;
+                    left: 0;
                     width: 100%;
                     height: 100%;
-                    bottom: 0;
-                    left: 0;
-                    transform: translate3d(0, 0, 0);
-                    animation-name: opening-animation-bottom-left;
-                    animation-delay: 0.5s;
-                    animation-duration: 3s;
-                    animation-timing-function: cubic-bezier(.13, .47, .54, .99);
-                    will-change: animation;
-                    .one {
+                    perspective: 1000px;
+                    .opening-animation-top-right {
                         position: absolute;
-                        transform-origin: center;
-                        bottom: -171px;
-                        left: 22px;
-                        width: 126px;
-                        transform: rotateZ(45deg);
-                        animation-name: opening-animation-bottom-left-one;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        right: 0;
+                        transform: translate3d(0, 0, 0);
+                        animation-name: opening-animation-top-right;
                         animation-delay: 0.5s;
                         animation-duration: 3s;
                         animation-timing-function: cubic-bezier(.13, .47, .54, .99);
                         will-change: animation;
+                        .one {
+                            position: absolute;
+                            transform-origin: center;
+                            top: 50px;
+                            right: 20px;
+                            width: 100px;
+                            transform: rotateZ(45deg);
+                            animation-name: opening-animation-top-right-one;
+                            animation-delay: 0.5s;
+                            animation-duration: 3s;
+                            animation-timing-function: cubic-bezier(.13, .47, .54, .99);
+                            will-change: animation;
+                            opacity: 1;
+                        }
+                        .two {
+                            position: absolute;
+                            transform-origin: center;
+                            top: 30px;
+                            right: -60px;
+                            width: 54px;
+                            transform: rotateZ(45deg);
+                            animation-name: opening-animation-top-right-two;
+                            animation-delay: 0.5s;
+                            animation-duration: 3s;
+                            animation-timing-function: cubic-bezier(.13, .47, .54, .99);
+                            will-change: animation;
+                        }
+                        .three {
+                            position: absolute;
+                            transform-origin: center;
+                            top: 4px;
+                            right: 84px;
+                            width: 139px;
+                            transform: rotateZ(45deg);
+                            animation-name: opening-animation-top-right-three;
+                            animation-delay: 0.5s;
+                            animation-duration: 3s;
+                            animation-timing-function: cubic-bezier(.13, .47, .54, .99);
+                            will-change: animation;
+                            opacity: 1;
+                        }
+                        .four {
+                            position: absolute;
+                            transform-origin: center;
+                            top: -386px;
+                            right: -124px;
+                            width: 139px;
+                            transform: rotateZ(45deg);
+                            animation-name: opening-animation-top-right-four;
+                            animation-delay: 0.5s;
+                            animation-duration: 3s;
+                            animation-timing-function: cubic-bezier(.13, .47, .54, .99);
+                            will-change: animation;
+                            opacity: 1;
+                        }
+                        .five {
+                            position: absolute;
+                            transform-origin: center;
+                            top: -396px;
+                            right: -21px;
+                            width: 139px;
+                            transform: rotateZ(45deg);
+                            animation-name: opening-animation-top-right-five;
+                            animation-delay: 0.5s;
+                            animation-duration: 3s;
+                            animation-timing-function: cubic-bezier(.13, .47, .54, .99);
+                            will-change: animation;
+                            opacity: 1;
+                        }
+                        .six {
+                            position: absolute;
+                            transform-origin: center;
+                            top: -106px;
+                            right: 206px;
+                            width: 229px;
+                            animation-name: opening-animation-top-right-six;
+                            animation-delay: 0.5s;
+                            animation-duration: 3s;
+                            animation-timing-function: cubic-bezier(.13, .47, .54, .99);
+                            will-change: animation;
+                        }
+                        .seven {
+                            position: absolute;
+                            transform-origin: center;
+                            top: 279px;
+                            right: 47px;
+                            width: 78px;
+                            transform: rotateZ(45deg);
+                            animation-name: opening-animation-top-right-seven;
+                            animation-delay: 0.5s;
+                            animation-duration: 3s;
+                            animation-timing-function: cubic-bezier(.13, .47, .54, .99);
+                            will-change: animation;
+                        }
+                        .eight {
+                            position: absolute;
+                            transform-origin: center;
+                            top: 284px;
+                            right: 214px;
+                            width: 61px;
+                            transform: rotateZ(45deg);
+                            animation-name: opening-animation-top-right-eight;
+                            animation-delay: 0.5s;
+                            animation-duration: 3s;
+                            animation-timing-function: cubic-bezier(.13, .47, .54, .99);
+                            will-change: animation;
+                        }
+                        .nine {
+                            position: absolute;
+                            transform-origin: center;
+                            top: -19px;
+                            right: 246px;
+                            width: 41px;
+                            transform: rotateZ(45deg);
+                            animation-name: opening-animation-top-right-nine;
+                            animation-delay: 0.5s;
+                            animation-duration: 3s;
+                            animation-timing-function: cubic-bezier(.13, .47, .54, .99);
+                            will-change: animation;
+                            opacity: 1;
+                        }
                     }
-                    .two {
+                    .opening-animation-bottom-left {
                         position: absolute;
-                        transform-origin: center;
-                        bottom: -128px;
-                        left: 85px;
-                        width: 126px;
-                        transform: rotateZ(45deg);
-                        animation-name: opening-animation-bottom-left-two;
+                        width: 100%;
+                        height: 100%;
+                        bottom: 0;
+                        left: 0;
+                        transform: translate3d(0, 0, 0);
+                        animation-name: opening-animation-bottom-left;
                         animation-delay: 0.5s;
                         animation-duration: 3s;
                         animation-timing-function: cubic-bezier(.13, .47, .54, .99);
                         will-change: animation;
-                    }
-                    .three {
-                        position: absolute;
-                        transform-origin: center;
-                        bottom: 334px;
-                        left: 166px;
-                        width: 55px;
-                        transform: rotateZ(45deg);
-                        animation-name: opening-animation-bottom-left-three;
-                        animation-delay: 0.5s;
-                        animation-duration: 3s;
-                        animation-timing-function: cubic-bezier(.13, .47, .54, .99);
-                        will-change: animation;
-                    }
-                    .four {
-                        position: absolute;
-                        transform-origin: center;
-                        bottom: 172px;
-                        left: 212px;
-                        width: 102px;
-                        transform: rotateZ(45deg);
-                        animation-name: opening-animation-bottom-left-four;
-                        animation-delay: 0.5s;
-                        animation-duration: 3s;
-                        animation-timing-function: cubic-bezier(.13, .47, .54, .99);
-                        will-change: animation;
-                    }
-                    .five {
-                        position: absolute;
-                        transform-origin: center;
-                        bottom: 228px;
-                        left: 189px;
-                        width: 29px;
-                        transform: rotateZ(45deg);
-                        animation-name: opening-animation-bottom-left-five;
-                        animation-delay: 0.5s;
-                        animation-duration: 3s;
-                        animation-timing-function: cubic-bezier(.13, .47, .54, .99);
-                        will-change: animation;
-                    }
-                    .six {
-                        position: absolute;
-                        transform-origin: center;
-                        bottom: -2px;
-                        left: -2px;
-                        width: 95px;
-                        transform: rotateZ(45deg);
-                        animation-name: opening-animation-bottom-left-six;
-                        animation-delay: 0.5s;
-                        animation-duration: 3s;
-                        animation-timing-function: cubic-bezier(.13, .47, .54, .99);
-                        will-change: animation;
-                    }
-                    .seven {
-                        position: absolute;
-                        transform-origin: center;
-                        bottom: 90px;
-                        left: 36px;
-                        width: 49px;
-                        transform: rotateZ(45deg);
-                        animation-name: opening-animation-bottom-left-seven;
-                        animation-delay: 0.5s;
-                        animation-duration: 3s;
-                        animation-timing-function: cubic-bezier(.13, .47, .54, .99);
-                        will-change: animation;
-                    }
-                    .eight {
-                        position: absolute;
-                        transform-origin: center;
-                        bottom: -64px;
-                        left: -47px;
-                        width: 49px;
-                        transform: rotateZ(45deg);
-                        animation-name: opening-animation-bottom-left-eight;
-                        animation-delay: 0.5s;
-                        animation-duration: 3s;
-                        animation-timing-function: cubic-bezier(.13, .47, .54, .99);
-                        will-change: animation;
-                        opacity: 1;
-                    }
-                    .nine {
-                        position: absolute;
-                        transform-origin: center;
-                        bottom: 67px;
-                        left: -38px;
-                        width: 49px;
-                        transform: rotateZ(45deg);
-                        animation-name: opening-animation-bottom-left-nine;
-                        animation-delay: 0.5s;
-                        animation-duration: 3s;
-                        animation-timing-function: cubic-bezier(.13, .47, .54, .99);
-                        will-change: animation;
-                        opacity: 1;
+                        .one {
+                            position: absolute;
+                            transform-origin: center;
+                            bottom: -171px;
+                            left: 22px;
+                            width: 126px;
+                            transform: rotateZ(45deg);
+                            animation-name: opening-animation-bottom-left-one;
+                            animation-delay: 0.5s;
+                            animation-duration: 3s;
+                            animation-timing-function: cubic-bezier(.13, .47, .54, .99);
+                            will-change: animation;
+                        }
+                        .two {
+                            position: absolute;
+                            transform-origin: center;
+                            bottom: -128px;
+                            left: 85px;
+                            width: 126px;
+                            transform: rotateZ(45deg);
+                            animation-name: opening-animation-bottom-left-two;
+                            animation-delay: 0.5s;
+                            animation-duration: 3s;
+                            animation-timing-function: cubic-bezier(.13, .47, .54, .99);
+                            will-change: animation;
+                        }
+                        .three {
+                            position: absolute;
+                            transform-origin: center;
+                            bottom: 334px;
+                            left: 166px;
+                            width: 55px;
+                            transform: rotateZ(45deg);
+                            animation-name: opening-animation-bottom-left-three;
+                            animation-delay: 0.5s;
+                            animation-duration: 3s;
+                            animation-timing-function: cubic-bezier(.13, .47, .54, .99);
+                            will-change: animation;
+                        }
+                        .four {
+                            position: absolute;
+                            transform-origin: center;
+                            bottom: 172px;
+                            left: 212px;
+                            width: 102px;
+                            transform: rotateZ(45deg);
+                            animation-name: opening-animation-bottom-left-four;
+                            animation-delay: 0.5s;
+                            animation-duration: 3s;
+                            animation-timing-function: cubic-bezier(.13, .47, .54, .99);
+                            will-change: animation;
+                        }
+                        .five {
+                            position: absolute;
+                            transform-origin: center;
+                            bottom: 228px;
+                            left: 189px;
+                            width: 29px;
+                            transform: rotateZ(45deg);
+                            animation-name: opening-animation-bottom-left-five;
+                            animation-delay: 0.5s;
+                            animation-duration: 3s;
+                            animation-timing-function: cubic-bezier(.13, .47, .54, .99);
+                            will-change: animation;
+                        }
+                        .six {
+                            position: absolute;
+                            transform-origin: center;
+                            bottom: -2px;
+                            left: -2px;
+                            width: 95px;
+                            transform: rotateZ(45deg);
+                            animation-name: opening-animation-bottom-left-six;
+                            animation-delay: 0.5s;
+                            animation-duration: 3s;
+                            animation-timing-function: cubic-bezier(.13, .47, .54, .99);
+                            will-change: animation;
+                        }
+                        .seven {
+                            position: absolute;
+                            transform-origin: center;
+                            bottom: 90px;
+                            left: 36px;
+                            width: 49px;
+                            transform: rotateZ(45deg);
+                            animation-name: opening-animation-bottom-left-seven;
+                            animation-delay: 0.5s;
+                            animation-duration: 3s;
+                            animation-timing-function: cubic-bezier(.13, .47, .54, .99);
+                            will-change: animation;
+                        }
+                        .eight {
+                            position: absolute;
+                            transform-origin: center;
+                            bottom: -64px;
+                            left: -47px;
+                            width: 49px;
+                            transform: rotateZ(45deg);
+                            animation-name: opening-animation-bottom-left-eight;
+                            animation-delay: 0.5s;
+                            animation-duration: 3s;
+                            animation-timing-function: cubic-bezier(.13, .47, .54, .99);
+                            will-change: animation;
+                            opacity: 1;
+                        }
+                        .nine {
+                            position: absolute;
+                            transform-origin: center;
+                            bottom: 67px;
+                            left: -38px;
+                            width: 49px;
+                            transform: rotateZ(45deg);
+                            animation-name: opening-animation-bottom-left-nine;
+                            animation-delay: 0.5s;
+                            animation-duration: 3s;
+                            animation-timing-function: cubic-bezier(.13, .47, .54, .99);
+                            will-change: animation;
+                            opacity: 1;
+                        }
                     }
                 }
             }
