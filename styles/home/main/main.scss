@@ -415,12 +415,10 @@ html {
                     transform: translate(-50%, -50%);
                     width: 100%;
                     .text-area {
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
                         height: 100px;
                         width: 100%;
+                        position: relative;
+                        margin-bottom: 50px;
                         .top {
                             position: absolute;
                             box-sizing: border-box;
@@ -433,8 +431,8 @@ html {
                             font-family: 'Montserrat', sans-serif;
                             line-height: 50px;
                             font-size: 1.5rem;
-                            letter-spacing: 10px;
-                            word-spacing: 15px;
+                            letter-spacing: 15px;
+                            word-spacing: 20px;
                         }
                         .border {
                             position: absolute;
@@ -458,6 +456,25 @@ html {
                             line-height: 50px;
                             font-size: 1rem;
                             letter-spacing: 10px;
+                        }
+                    }
+                    .app {
+                        width: 100%;
+                        height: min(10vw, 10vh);
+                        position: relative;
+                        .app-select {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 60%;
+                            display: flex;
+                            justify-content: space-between;
+                            button {
+                                aspect-ratio: 1 / 1;
+                                width: min(10vw, 10vh);
+                                border: none;
+                            }
                         }
                     }
                 }

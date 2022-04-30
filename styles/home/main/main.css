@@ -508,12 +508,10 @@ html body main .home .home-content {
   width: 100%;
 }
 html body main .home .home-content .text-area {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   height: 100px;
   width: 100%;
+  position: relative;
+  margin-bottom: 50px;
 }
 html body main .home .home-content .text-area .top {
   position: absolute;
@@ -527,8 +525,8 @@ html body main .home .home-content .text-area .top {
   font-family: "Montserrat", sans-serif;
   line-height: 50px;
   font-size: 1.5rem;
-  letter-spacing: 10px;
-  word-spacing: 15px;
+  letter-spacing: 15px;
+  word-spacing: 20px;
 }
 html body main .home .home-content .text-area .border {
   position: absolute;
@@ -552,6 +550,25 @@ html body main .home .home-content .text-area .bottom {
   line-height: 50px;
   font-size: 1rem;
   letter-spacing: 10px;
+}
+html body main .home .home-content .app {
+  width: 100%;
+  height: min(10vw, 10vh);
+  position: relative;
+}
+html body main .home .home-content .app .app-select {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+html body main .home .home-content .app .app-select button {
+  aspect-ratio: 1/1;
+  width: min(10vw, 10vh);
+  border: none;
 }
 html body .black {
   position: absolute;
