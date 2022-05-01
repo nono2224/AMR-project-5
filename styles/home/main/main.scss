@@ -414,6 +414,11 @@ html {
                     left: 50%;
                     transform: translate(-50%, -50%);
                     width: 100%;
+                    animation-name: home-content;
+                    animation-delay: 0.5s;
+                    animation-duration: 3s;
+                    animation-timing-function: cubic-bezier(.14, .74, .54, .99);
+                    will-change: animation;
                     .text-area {
                         height: 100px;
                         width: 100%;
@@ -475,11 +480,6 @@ html {
                             width: 60%;
                             display: flex;
                             justify-content: space-between;
-                            animation-name: app-select;
-                            animation-delay: 0.5s;
-                            animation-duration: 3s;
-                            animation-timing-function: cubic-bezier(.14, .74, .54, .99);
-                            will-change: animation;
                             button {
                                 aspect-ratio: 1 / 1;
                                 width: min(10vw, 10vh);
@@ -896,32 +896,29 @@ html {
     }
 }
 
-@keyframes app {
+@keyframes home-content {
     0% {
-        height: 0;
-        opacity: 0;
-    }
-    58% {
-        height: 0;
-        opacity: 0;
-    }
-    100% {
-        height: min(10vw, 10vh);
-        opacity: 1;
-    }
-}
-
-@keyframes app-select {
-    0% {
-        top: 70%;
+        top: calc(50% - 50px);
         transform: translateX(-50%);
     }
     58% {
-        top: 70%;
+        top: calc(50% - 50px);
         transform: translateX(-50%);
     }
     100% {
         top: 50%;
         transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes app {
+    0% {
+        opacity: 0;
+    }
+    58% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

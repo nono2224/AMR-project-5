@@ -506,6 +506,15 @@ html body main .home .home-content {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+  -webkit-animation-name: home-content;
+          animation-name: home-content;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: cubic-bezier(0.14, 0.74, 0.54, 0.99);
+          animation-timing-function: cubic-bezier(0.14, 0.74, 0.54, 0.99);
+  will-change: animation;
 }
 html body main .home .home-content .text-area {
   height: 100px;
@@ -573,15 +582,6 @@ html body main .home .home-content .app .app-select {
   width: 60%;
   display: flex;
   justify-content: space-between;
-  -webkit-animation-name: app-select;
-          animation-name: app-select;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-timing-function: cubic-bezier(0.14, 0.74, 0.54, 0.99);
-          animation-timing-function: cubic-bezier(0.14, 0.74, 0.54, 0.99);
-  will-change: animation;
 }
 html body main .home .home-content .app .app-select button {
   aspect-ratio: 1/1;
@@ -1340,60 +1340,54 @@ html body .black {
     opacity: 1;
   }
 }
+@-webkit-keyframes home-content {
+  0% {
+    top: calc(50% - 50px);
+    transform: translateX(-50%);
+  }
+  58% {
+    top: calc(50% - 50px);
+    transform: translateX(-50%);
+  }
+  100% {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@keyframes home-content {
+  0% {
+    top: calc(50% - 50px);
+    transform: translateX(-50%);
+  }
+  58% {
+    top: calc(50% - 50px);
+    transform: translateX(-50%);
+  }
+  100% {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 @-webkit-keyframes app {
   0% {
-    height: 0;
     opacity: 0;
   }
   58% {
-    height: 0;
     opacity: 0;
   }
   100% {
-    height: min(10vw, 10vh);
     opacity: 1;
   }
 }
 @keyframes app {
   0% {
-    height: 0;
     opacity: 0;
   }
   58% {
-    height: 0;
     opacity: 0;
   }
   100% {
-    height: min(10vw, 10vh);
     opacity: 1;
-  }
-}
-@-webkit-keyframes app-select {
-  0% {
-    top: 70%;
-    transform: translateX(-50%);
-  }
-  58% {
-    top: 70%;
-    transform: translateX(-50%);
-  }
-  100% {
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-@keyframes app-select {
-  0% {
-    top: 70%;
-    transform: translateX(-50%);
-  }
-  58% {
-    top: 70%;
-    transform: translateX(-50%);
-  }
-  100% {
-    top: 50%;
-    transform: translate(-50%, -50%);
   }
 }
 /*# sourceMappingURL=main.css.map */
