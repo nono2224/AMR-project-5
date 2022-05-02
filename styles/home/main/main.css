@@ -399,8 +399,8 @@ html body main .home .opening-animation .opening-animation-bottom-left .three {
 html body main .home .opening-animation .opening-animation-bottom-left .four {
   position: absolute;
   transform-origin: center;
-  bottom: 172px;
-  left: 212px;
+  bottom: 27px;
+  left: 244px;
   width: 102px;
   transform: rotateZ(45deg);
   -webkit-animation-name: opening-animation-bottom-left-four;
@@ -1172,8 +1172,8 @@ html body .black {
     width: 102px;
   }
   100% {
-    bottom: 172px;
-    left: 212px;
+    bottom: 27px;
+    left: 244px;
     width: 102px;
   }
 }
@@ -1189,8 +1189,8 @@ html body .black {
     width: 102px;
   }
   100% {
-    bottom: 172px;
-    left: 212px;
+    bottom: 27px;
+    left: 244px;
     width: 102px;
   }
 }
