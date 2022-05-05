@@ -329,9 +329,9 @@ html {
                         .four {
                             position: absolute;
                             transform-origin: center;
-                            bottom: 27px;
-                            left: 244px;
-                            width: 102px;
+                            bottom: -70px;
+                            left: 224px;
+                            width: 120px;
                             transform: rotateZ(45deg);
                             animation-name: opening-animation-bottom-left-four;
                             animation-delay: 0.5s;
@@ -812,9 +812,9 @@ html {
         width: 102px;
     }
     100% {
-        bottom: 27px;
-        left: 244px;
-        width: 102px;
+        bottom: -70px;
+        left: 224px;
+        width: 120px;
     }
 }
 
