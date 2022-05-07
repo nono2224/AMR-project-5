@@ -22,7 +22,7 @@ html body header {
   left: calc(50px - 100vw);
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: black;
   -webkit-animation-name: header;
           animation-name: header;
   -webkit-animation-delay: 0.5s;
