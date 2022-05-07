@@ -59,7 +59,7 @@ html body header .header-button .header-button-content {
   border: 1px solid transparent;
   transition: 0.25s;
 }
-html body header .header-button .header-button-content .header-button-content-border-top {
+html body header .header-button .header-button-content .header-button-content-border-one {
   position: absolute;
   top: 20%;
   left: 50%;
