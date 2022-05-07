@@ -146,7 +146,54 @@ html body main .home {
   top: 0;
   left: 0;
 }
-html body main .home .opening-animation {
+html body main .home .selector {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  transform: translateY(-50%);
+  block-size: 25px;
+  z-index: 99;
+  font-family: "Roboto", sans-serif;
+  -webkit-animation-name: selector;
+          animation-name: selector;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
+          animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
+  will-change: animation;
+}
+html body main .home .selector a {
+  box-sizing: border-box;
+  border-left: 1px solid transparent;
+  line-height: 25px;
+  margin-bottom: 25px;
+  font-size: 0.8rem;
+  transition: 0.25s;
+  cursor: pointer;
+}
+html body main .home .selector a:last-child {
+  margin-bottom: 0;
+}
+html body main .home .selector a:hover {
+  border-left: 1px solid #8a8a8a;
+  color: #8a8a8a;
+}
+html body main .home .selector .selector-top {
+  border-left: 1px solid black;
+}
+html body main .home .home-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.25s;
+}
+html body main .home .home-top .opening-animation {
   position: absolute;
   top: 0;
   left: 0;
@@ -154,7 +201,7 @@ html body main .home .opening-animation {
   height: 100%;
   perspective: 1000px;
 }
-html body main .home .opening-animation .opening-animation-top-right {
+html body main .home .home-top .opening-animation .opening-animation-top-right {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -171,7 +218,7 @@ html body main .home .opening-animation .opening-animation-top-right {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .home .opening-animation .opening-animation-top-right .one {
+html body main .home .home-top .opening-animation .opening-animation-top-right .one {
   position: absolute;
   transform-origin: center;
   top: 50px;
@@ -189,7 +236,7 @@ html body main .home .opening-animation .opening-animation-top-right .one {
   will-change: animation;
   opacity: 1;
 }
-html body main .home .opening-animation .opening-animation-top-right .two {
+html body main .home .home-top .opening-animation .opening-animation-top-right .two {
   position: absolute;
   transform-origin: center;
   top: 30px;
@@ -206,7 +253,7 @@ html body main .home .opening-animation .opening-animation-top-right .two {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .home .opening-animation .opening-animation-top-right .three {
+html body main .home .home-top .opening-animation .opening-animation-top-right .three {
   position: absolute;
   transform-origin: center;
   top: 4px;
@@ -224,7 +271,7 @@ html body main .home .opening-animation .opening-animation-top-right .three {
   will-change: animation;
   opacity: 1;
 }
-html body main .home .opening-animation .opening-animation-top-right .four {
+html body main .home .home-top .opening-animation .opening-animation-top-right .four {
   position: absolute;
   transform-origin: center;
   top: -386px;
@@ -242,7 +289,7 @@ html body main .home .opening-animation .opening-animation-top-right .four {
   will-change: animation;
   opacity: 1;
 }
-html body main .home .opening-animation .opening-animation-top-right .five {
+html body main .home .home-top .opening-animation .opening-animation-top-right .five {
   position: absolute;
   transform-origin: center;
   top: -396px;
@@ -260,7 +307,7 @@ html body main .home .opening-animation .opening-animation-top-right .five {
   will-change: animation;
   opacity: 1;
 }
-html body main .home .opening-animation .opening-animation-top-right .six {
+html body main .home .home-top .opening-animation .opening-animation-top-right .six {
   position: absolute;
   transform-origin: center;
   top: -106px;
@@ -276,7 +323,7 @@ html body main .home .opening-animation .opening-animation-top-right .six {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .home .opening-animation .opening-animation-top-right .seven {
+html body main .home .home-top .opening-animation .opening-animation-top-right .seven {
   position: absolute;
   transform-origin: center;
   top: 279px;
@@ -293,7 +340,7 @@ html body main .home .opening-animation .opening-animation-top-right .seven {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .home .opening-animation .opening-animation-top-right .eight {
+html body main .home .home-top .opening-animation .opening-animation-top-right .eight {
   position: absolute;
   transform-origin: center;
   top: 284px;
@@ -310,7 +357,7 @@ html body main .home .opening-animation .opening-animation-top-right .eight {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .home .opening-animation .opening-animation-top-right .nine {
+html body main .home .home-top .opening-animation .opening-animation-top-right .nine {
   position: absolute;
   transform-origin: center;
   top: -19px;
@@ -328,7 +375,7 @@ html body main .home .opening-animation .opening-animation-top-right .nine {
   will-change: animation;
   opacity: 1;
 }
-html body main .home .opening-animation .opening-animation-bottom-left {
+html body main .home .home-top .opening-animation .opening-animation-bottom-left {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -345,7 +392,7 @@ html body main .home .opening-animation .opening-animation-bottom-left {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .home .opening-animation .opening-animation-bottom-left .one {
+html body main .home .home-top .opening-animation .opening-animation-bottom-left .one {
   position: absolute;
   transform-origin: center;
   bottom: -171px;
@@ -362,7 +409,7 @@ html body main .home .opening-animation .opening-animation-bottom-left .one {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .home .opening-animation .opening-animation-bottom-left .two {
+html body main .home .home-top .opening-animation .opening-animation-bottom-left .two {
   position: absolute;
   transform-origin: center;
   bottom: -128px;
@@ -379,7 +426,7 @@ html body main .home .opening-animation .opening-animation-bottom-left .two {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .home .opening-animation .opening-animation-bottom-left .three {
+html body main .home .home-top .opening-animation .opening-animation-bottom-left .three {
   position: absolute;
   transform-origin: center;
   bottom: 334px;
@@ -396,7 +443,7 @@ html body main .home .opening-animation .opening-animation-bottom-left .three {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .home .opening-animation .opening-animation-bottom-left .four {
+html body main .home .home-top .opening-animation .opening-animation-bottom-left .four {
   position: absolute;
   transform-origin: center;
   bottom: -70px;
@@ -413,7 +460,7 @@ html body main .home .opening-animation .opening-animation-bottom-left .four {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .home .opening-animation .opening-animation-bottom-left .five {
+html body main .home .home-top .opening-animation .opening-animation-bottom-left .five {
   position: absolute;
   transform-origin: center;
   bottom: 228px;
@@ -430,7 +477,7 @@ html body main .home .opening-animation .opening-animation-bottom-left .five {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .home .opening-animation .opening-animation-bottom-left .six {
+html body main .home .home-top .opening-animation .opening-animation-bottom-left .six {
   position: absolute;
   transform-origin: center;
   bottom: -2px;
@@ -447,7 +494,7 @@ html body main .home .opening-animation .opening-animation-bottom-left .six {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .home .opening-animation .opening-animation-bottom-left .seven {
+html body main .home .home-top .opening-animation .opening-animation-bottom-left .seven {
   position: absolute;
   transform-origin: center;
   bottom: 90px;
@@ -464,7 +511,7 @@ html body main .home .opening-animation .opening-animation-bottom-left .seven {
           animation-timing-function: cubic-bezier(0.13, 0.47, 0.54, 0.99);
   will-change: animation;
 }
-html body main .home .opening-animation .opening-animation-bottom-left .eight {
+html body main .home .home-top .opening-animation .opening-animation-bottom-left .eight {
   position: absolute;
   transform-origin: center;
   bottom: -64px;
@@ -482,7 +529,7 @@ html body main .home .opening-animation .opening-animation-bottom-left .eight {
   will-change: animation;
   opacity: 1;
 }
-html body main .home .opening-animation .opening-animation-bottom-left .nine {
+html body main .home .home-top .opening-animation .opening-animation-bottom-left .nine {
   position: absolute;
   transform-origin: center;
   bottom: 67px;
@@ -500,7 +547,7 @@ html body main .home .opening-animation .opening-animation-bottom-left .nine {
   will-change: animation;
   opacity: 1;
 }
-html body main .home .home-content {
+html body main .home .home-top .home-content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -516,13 +563,13 @@ html body main .home .home-content {
           animation-timing-function: cubic-bezier(0.14, 0.74, 0.54, 0.99);
   will-change: animation;
 }
-html body main .home .home-content .text-area {
+html body main .home .home-top .home-content .text-area {
   height: 100px;
   width: 100%;
   position: relative;
   margin-bottom: 50px;
 }
-html body main .home .home-content .text-area .top {
+html body main .home .home-top .home-content .text-area .top {
   position: absolute;
   box-sizing: border-box;
   top: 0;
@@ -537,7 +584,7 @@ html body main .home .home-content .text-area .top {
   letter-spacing: 15px;
   word-spacing: 20px;
 }
-html body main .home .home-content .text-area .border {
+html body main .home .home-top .home-content .text-area .border {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -546,7 +593,7 @@ html body main .home .home-content .text-area .border {
   height: 1px;
   background-color: black;
 }
-html body main .home .home-content .text-area .bottom {
+html body main .home .home-top .home-content .text-area .bottom {
   position: absolute;
   box-sizing: border-box;
   bottom: 0;
@@ -560,7 +607,7 @@ html body main .home .home-content .text-area .bottom {
   font-size: 1rem;
   letter-spacing: 10px;
 }
-html body main .home .home-content .app {
+html body main .home .home-top .home-content .app {
   width: 100%;
   height: min(10vw, 10vh);
   position: relative;
@@ -574,7 +621,7 @@ html body main .home .home-content .app {
           animation-timing-function: cubic-bezier(0.14, 0.74, 0.54, 0.99);
   will-change: animation;
 }
-html body main .home .home-content .app .app-select {
+html body main .home .home-top .home-content .app .app-select {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -583,10 +630,19 @@ html body main .home .home-content .app .app-select {
   display: flex;
   justify-content: space-between;
 }
-html body main .home .home-content .app .app-select button {
+html body main .home .home-top .home-content .app .app-select button {
   aspect-ratio: 1/1;
   width: min(10vw, 10vh);
   border: none;
+}
+html body main .home .home-creator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.25s;
+  opacity: 0;
 }
 html body .black {
   position: absolute;
@@ -1380,6 +1436,28 @@ html body .black {
   }
 }
 @keyframes app {
+  0% {
+    opacity: 0;
+  }
+  58% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes selector {
+  0% {
+    opacity: 0;
+  }
+  58% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes selector {
   0% {
     opacity: 0;
   }
