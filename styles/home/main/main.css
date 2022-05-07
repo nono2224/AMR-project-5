@@ -68,6 +68,7 @@ html body header .header-button .header-button-content .header-button-content-bo
   width: 80%;
   background-color: white;
   border-radius: 20px;
+  transition: 0.25s;
 }
 html body header .header-button .header-button-content .header-button-content-border-two-one {
   position: absolute;
@@ -78,6 +79,7 @@ html body header .header-button .header-button-content .header-button-content-bo
   width: 80%;
   background-color: white;
   border-radius: 20px;
+  transition: 0.25s;
 }
 html body header .header-button .header-button-content .header-button-content-border-two-two {
   position: absolute;
@@ -88,6 +90,7 @@ html body header .header-button .header-button-content .header-button-content-bo
   width: 80%;
   background-color: white;
   border-radius: 20px;
+  transition: 0.25s;
 }
 html body header .header-button .header-button-content .header-button-content-border-three {
   position: absolute;
@@ -98,6 +101,7 @@ html body header .header-button .header-button-content .header-button-content-bo
   width: 80%;
   background-color: white;
   border-radius: 20px;
+  transition: 0.25s;
 }
 html body header .header-content {
   position: absolute;
