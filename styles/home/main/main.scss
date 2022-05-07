@@ -104,10 +104,13 @@ html {
                 padding: 0 50px;
                 opacity: 0;
                 transition: 0.5s;
-                button {
+                a {
+                    display: block;
                     box-sizing: border-box;
                     width: 100%;
                     height: 50px;
+                    text-align: center;
+                    line-height: 50px;
                     background-color: transparent;
                     color: white;
                     border: none;
@@ -526,10 +529,12 @@ html {
                                 width: 60%;
                                 display: flex;
                                 justify-content: space-between;
-                                button {
+                                a {
+                                    display: block;
                                     aspect-ratio: 1 / 1;
                                     width: min(10vw, 10vh);
                                     border: none;
+                                    background-color: lightgray;
                                 }
                             }
                         }

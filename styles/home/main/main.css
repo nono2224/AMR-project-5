@@ -112,10 +112,13 @@ html body header .header-content {
   opacity: 0;
   transition: 0.5s;
 }
-html body header .header-content button {
+html body header .header-content a {
+  display: block;
   box-sizing: border-box;
   width: 100%;
   height: 50px;
+  text-align: center;
+  line-height: 50px;
   background-color: transparent;
   color: white;
   border: none;
@@ -123,7 +126,7 @@ html body header .header-content button {
   transition: 0.25s;
   cursor: pointer;
 }
-html body header .header-content button:hover {
+html body header .header-content a:hover {
   background-color: rgba(128, 128, 128, 0.5);
 }
 html body main {
@@ -635,10 +638,12 @@ html body main .home .home-top .home-content .app .app-select {
   display: flex;
   justify-content: space-between;
 }
-html body main .home .home-top .home-content .app .app-select button {
+html body main .home .home-top .home-content .app .app-select a {
+  display: block;
   aspect-ratio: 1/1;
   width: min(10vw, 10vh);
   border: none;
+  background-color: lightgray;
 }
 html body main .home .home-creator {
   position: absolute;
