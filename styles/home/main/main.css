@@ -644,6 +644,7 @@ html body main .home .home-top .home-content .app .app-select a {
   width: min(10vw, 10vh);
   border: none;
   background-color: lightgray;
+  cursor: pointer;
 }
 html body main .home .home-creator {
   position: absolute;
