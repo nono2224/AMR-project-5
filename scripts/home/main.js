@@ -1,4 +1,16 @@
 $(".header-button").on("click", header_open_close);
+$(".app-one").on("click", go_page_one);
+$(".app-two").on("click", go_page_two);
+$(".app-three").on("click", go_page_three);
+$(".app-four").on("click", go_page_four);
+$(".app-five").on("click", go_page_five);
+$(".header-content-home").on("click", go_home);
+$(".header-content-page-one").on("click", go_page_one);
+$(".header-content-page-two").on("click", go_page_two);
+$(".header-content-page-three").on("click", go_page_three);
+$(".header-content-page-four").on("click", go_page_four);
+$(".header-content-page-five").on("click", go_page_five);
+
 
 var header_open_close_check = 0;
 
@@ -19,5 +31,121 @@ function header_open_close() {
         $(".header-button-content-border-two-two").css("transform", "translate(-50%,-50%)");
         $(".header-button-content-border-three").css("opacity", "1");
         header_open_close_check = 0;
+    }
+}
+
+function page_transition_header_cover() {
+    $("header").css("left", "calc(50px - 100vw)");
+    $(".header-content").css("opacity", "0");
+    $(".header-button-content-border-one").css("opacity", "1");
+    $(".header-button-content-border-two-one").css("transform", "translate(-50%,-50%)");
+    $(".header-button-content-border-two-two").css("transform", "translate(-50%,-50%)");
+    $(".header-button-content-border-three").css("opacity", "1");
+    header_open_close_check = 0;
+    $("header").css("width", "200%");
+    var timer_page_transition_header_cover = setInterval(page_transition_header_cover_close, 1000);
+
+    function page_transition_header_cover_close() {
+        $("header").css("width", "100%");
+        clearInterval(timer_page_transition_header_cover);
+    }
+}
+
+function all_clear() {
+    $(".home").css("width", "0");
+    $(".home").css("height", "0");
+    $(".home").css("opacity", "0");
+    $(".page-one").css("width", "0");
+    $(".page-one").css("height", "0");
+    $(".page-one").css("opacity", "0");
+    $(".page-two").css("width", "0");
+    $(".page-two").css("height", "0");
+    $(".page-two").css("opacity", "0");
+    $(".page-three").css("width", "0");
+    $(".page-three").css("height", "0");
+    $(".page-three").css("opacity", "0");
+    $(".page-four").css("width", "0");
+    $(".page-four").css("height", "0");
+    $(".page-four").css("opacity", "0");
+    $(".page-five").css("width", "0");
+    $(".page-five").css("height", "0");
+    $(".page-five").css("opacity", "0");
+}
+
+function go_home() {
+    page_transition_header_cover();
+    var timer_go_home = setInterval(go_home_page_change, 750);
+
+    function go_home_page_change() {
+        all_clear();
+        $(".home").css("width", "100%");
+        $(".home").css("height", "100%");
+        $(".home").css("opacity", "1");
+        clearInterval(timer_go_home);
+    }
+}
+
+function go_page_one() {
+    page_transition_header_cover();
+    var timer_go_page_one = setInterval(go_page_one_page_change, 750);
+
+    function go_page_one_page_change() {
+        all_clear();
+        $(".page-one").css("width", "100%");
+        $(".page-one").css("height", "100%");
+        $(".page-one").css("opacity", "1");
+        clearInterval(timer_go_page_one);
+    }
+}
+
+function go_page_two() {
+    page_transition_header_cover();
+    var timer_go_page_two = setInterval(go_page_two_page_change, 750);
+
+    function go_page_two_page_change() {
+        all_clear();
+        $(".page-two").css("width", "100%");
+        $(".page-two").css("height", "100%");
+        $(".page-two").css("opacity", "1");
+        clearInterval(timer_go_page_two);
+    }
+}
+
+function go_page_three() {
+    page_transition_header_cover();
+    var timer_go_page_three = setInterval(go_page_three_page_change, 750);
+
+    function go_page_three_page_change() {
+        all_clear();
+        $(".page-three").css("width", "100%");
+        $(".page-three").css("height", "100%");
+        $(".page-three").css("opacity", "1");
+        clearInterval(timer_go_page_three);
+    }
+}
+
+function go_page_four() {
+    page_transition_header_cover();
+    var timer_go_page_four = setInterval(go_page_four_page_change, 750);
+
+    function go_page_four_page_change() {
+        all_clear();
+        $(".page-four").css("width", "100%");
+        $(".page-four").css("height", "100%");
+        $(".page-four").css("opacity", "1");
+        clearInterval(timer_go_page_four);
+    }
+}
+
+function go_page_five() {
+    page_transition_header_cover();
+    var timer_go_page_five = setInterval(go_page_five_page_change, 750);
+
+    function go_page_five_page_change() {
+        all_clear();
+        $(".page-five").css("width", "100%");
+        $(".page-five").css("height", "100%");
+        $(".page-five").css("opacity", "1");
+        clearInterval(timer_go_page_five);
     }
 }

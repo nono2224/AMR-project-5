@@ -653,6 +653,51 @@ html body main .home .home-creator {
   width: 100%;
   height: 100%;
 }
+html body main .page-one {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  background-color: lightblue;
+}
+html body main .page-two {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  background-color: lightcoral;
+}
+html body main .page-three {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  background-color: lightgoldenrodyellow;
+}
+html body main .page-four {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  background-color: lightgreen;
+}
+html body main .page-five {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  background-color: lightpink;
+}
 html body .black {
   position: absolute;
   top: 0;

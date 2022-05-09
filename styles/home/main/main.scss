@@ -549,6 +549,51 @@ html {
                     height: 100%;
                 }
             }
+            .page-one {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 0;
+                opacity: 0;
+                background-color: lightblue;
+            }
+            .page-two {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 0;
+                opacity: 0;
+                background-color: lightcoral;
+            }
+            .page-three {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 0;
+                opacity: 0;
+                background-color: lightgoldenrodyellow;
+            }
+            .page-four {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 0;
+                opacity: 0;
+                background-color: lightgreen;
+            }
+            .page-five {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 0;
+                opacity: 0;
+                background-color: lightpink;
+            }
         }
         .black {
             position: absolute;
