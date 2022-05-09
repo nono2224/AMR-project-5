@@ -10,7 +10,19 @@ $(".header-content-page-two").on("click", go_page_two);
 $(".header-content-page-three").on("click", go_page_three);
 $(".header-content-page-four").on("click", go_page_four);
 $(".header-content-page-five").on("click", go_page_five);
-
+$(window).keydown(function(e) {
+    if (e.keyCode == 27) {
+        if (header_open_close_check == 1) {
+            $("header").css("left", "calc(50px - 100vw)");
+            $(".header-content").css("opacity", "0");
+            $(".header-button-content-border-one").css("opacity", "1");
+            $(".header-button-content-border-two-one").css("transform", "translate(-50%,-50%)");
+            $(".header-button-content-border-two-two").css("transform", "translate(-50%,-50%)");
+            $(".header-button-content-border-three").css("opacity", "1");
+            header_open_close_check = 0;
+        }
+    }
+});
 
 var header_open_close_check = 0;
 
