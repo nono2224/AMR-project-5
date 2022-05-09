@@ -49,6 +49,7 @@ function header_open_close() {
 function page_transition_header_cover() {
     $("header").css("left", "calc(50px - 100vw)");
     $(".header-content").css("opacity", "0");
+    $(".header-button").css("opacity", "0");
     $(".header-button-content-border-one").css("opacity", "1");
     $(".header-button-content-border-two-one").css("transform", "translate(-50%,-50%)");
     $(".header-button-content-border-two-two").css("transform", "translate(-50%,-50%)");
@@ -59,6 +60,7 @@ function page_transition_header_cover() {
 
     function page_transition_header_cover_close() {
         $("header").css("width", "100%");
+        $(".header-button").css("opacity", "1");
         clearInterval(timer_page_transition_header_cover);
     }
 }

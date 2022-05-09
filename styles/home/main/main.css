@@ -44,6 +44,7 @@ html body header .header-button {
   border: none;
   cursor: pointer;
   background-color: transparent;
+  transition: 0.25s;
 }
 html body header .header-button:hover .header-button-content {
   border: 1px solid #c6e6ef;
