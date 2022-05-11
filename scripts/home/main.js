@@ -11,6 +11,7 @@ $(".header-content-page-two").on("click", go_page_two);
 $(".header-content-page-three").on("click", go_page_three);
 $(".header-content-page-four").on("click", go_page_four);
 $(".header-content-page-five").on("click", go_page_five);
+$(".header-dark-mode-button").on("click", dark_mode_change);
 $(window).keydown(function(e) {
     if (e.keyCode == 27) {
         if (header_open_close_check == 1) {
@@ -26,6 +27,7 @@ $(window).keydown(function(e) {
 });
 
 var header_open_close_check = 0;
+var dark_mode_check = 0;
 
 function header_open_close() {
     if (header_open_close_check == 0) {
@@ -52,6 +54,7 @@ function page_transition_header_cover() {
     $(".header-content").css("opacity", "0");
     $(".header-button").css("opacity", "0");
     $(".header-home-button").css("opacity", "0");
+    $(".header-dark-mode-button").css("opacity", "0");
     $(".header-button-content-border-one").css("opacity", "1");
     $(".header-button-content-border-two-one").css("transform", "translate(-50%,-50%)");
     $(".header-button-content-border-two-two").css("transform", "translate(-50%,-50%)");
@@ -64,6 +67,7 @@ function page_transition_header_cover() {
         $("header").css("width", "100%");
         $(".header-button").css("opacity", "1");
         $(".header-home-button").css("opacity", "1");
+        $(".header-dark-mode-button").css("opacity", "1");
         clearInterval(timer_page_transition_header_cover);
     }
 }
@@ -164,5 +168,31 @@ function go_page_five() {
         $(".page-five").css("height", "100%");
         $(".page-five").css("opacity", "1");
         clearInterval(timer_go_page_five);
+    }
+}
+
+function dark_mode_change() {
+    if (dark_mode_check == 0) {
+        $(".home").css("background-color", "#404040");
+        $(".opening-animation-dark").css("background-color", "#0000005c");
+        $(".top").css("color", "white");
+        $(".middle-border").css("background-color", "white");
+        $(".bottom").css("color", "white");
+        $(".selector-top").css("color", "white");
+        $(".selector-creator").css("color", "white");
+        $(".dark-mode-off").css("opacity", "0");
+        $(".dark-mode-on").css("opacity", "1");
+        dark_mode_check = 1;
+    } else if (dark_mode_check == 1) {
+        $(".home").css("background-color", "white");
+        $(".opening-animation-dark").css("background-color", "transparent");
+        $(".top").css("color", "black");
+        $(".middle-border").css("background-color", "black");
+        $(".bottom").css("color", "black");
+        $(".selector-top").css("color", "black");
+        $(".selector-creator").css("color", "black");
+        $(".dark-mode-off").css("opacity", "1");
+        $(".dark-mode-on").css("opacity", "0");
+        dark_mode_check = 0;
     }
 }

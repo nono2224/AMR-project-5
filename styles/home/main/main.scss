@@ -154,6 +154,43 @@ html {
                     }
                 }
             }
+            .header-dark-mode-button {
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                bottom: 0;
+                right: 0;
+                transition: 0.25s;
+                cursor: pointer;
+                &:hover .header-dark-mode-button-content {
+                    border: 1px solid #c6e6ef;
+                }
+                .header-dark-mode-button-content {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 70%;
+                    height: 70%;
+                    border-radius: 50%;
+                    border: 1px solid transparent;
+                    transition: 0.25s;
+                    .dark-mode-off {
+                        opacity: 1;
+                    }
+                    .dark-mode-on {
+                        opacity: 0;
+                    }
+                    svg {
+                        fill: white;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        transition: 0.25s;
+                    }
+                }
+            }
         }
         main {
             height: 100%;
@@ -176,6 +213,8 @@ html {
                 overflow-y: hidden;
                 overflow-x: hidden;
                 scroll-behavior: smooth;
+                background-color: white;
+                transition: 0.25s;
                 .selector {
                     position: fixed;
                     top: 50%;
@@ -207,6 +246,12 @@ html {
                             border-left: 1px solid rgb(138, 138, 138);
                             color: rgb(138, 138, 138);
                         }
+                    }
+                    .selector-top {
+                        color: black;
+                    }
+                    .selector-creator {
+                        color: black;
                     }
                 }
                 .home-top {
@@ -488,6 +533,15 @@ html {
                                 opacity: 1;
                             }
                         }
+                        .opening-animation-dark {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background-color: transparent;
+                            transition: 0.25s;
+                        }
                     }
                     .home-content {
                         position: absolute;
@@ -519,8 +573,10 @@ html {
                                 font-size: 1.5rem;
                                 letter-spacing: 15px;
                                 word-spacing: 20px;
+                                color: black;
+                                transition: 0.25s;
                             }
-                            .border {
+                            .middle-border {
                                 position: absolute;
                                 top: 50%;
                                 left: 50%;
@@ -528,6 +584,7 @@ html {
                                 width: 400px;
                                 height: 1px;
                                 background-color: black;
+                                transition: 0.25s;
                             }
                             .bottom {
                                 position: absolute;
@@ -542,6 +599,8 @@ html {
                                 line-height: 50px;
                                 font-size: 1rem;
                                 letter-spacing: 10px;
+                                color: black;
+                                transition: 0.25s;
                             }
                         }
                         .app {

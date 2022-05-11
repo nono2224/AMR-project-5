@@ -161,6 +161,43 @@ html body header .header-home-button .header-home-button-content svg {
   width: 90%;
   height: 90%;
 }
+html body header .header-dark-mode-button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  bottom: 0;
+  right: 0;
+  transition: 0.25s;
+  cursor: pointer;
+}
+html body header .header-dark-mode-button:hover .header-dark-mode-button-content {
+  border: 1px solid #c6e6ef;
+}
+html body header .header-dark-mode-button .header-dark-mode-button-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  transition: 0.25s;
+}
+html body header .header-dark-mode-button .header-dark-mode-button-content .dark-mode-off {
+  opacity: 1;
+}
+html body header .header-dark-mode-button .header-dark-mode-button-content .dark-mode-on {
+  opacity: 0;
+}
+html body header .header-dark-mode-button .header-dark-mode-button-content svg {
+  fill: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.25s;
+}
 html body main {
   height: 100%;
   position: absolute;
@@ -187,6 +224,8 @@ html body main .home {
   overflow-y: hidden;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  background-color: white;
+  transition: 0.25s;
 }
 html body main .home .selector {
   position: fixed;
@@ -225,6 +264,12 @@ html body main .home .selector a:last-child {
 html body main .home .selector a:hover {
   border-left: 1px solid #8a8a8a;
   color: #8a8a8a;
+}
+html body main .home .selector .selector-top {
+  color: black;
+}
+html body main .home .selector .selector-creator {
+  color: black;
 }
 html body main .home .home-top {
   position: absolute;
@@ -587,6 +632,15 @@ html body main .home .home-top .opening-animation .opening-animation-bottom-left
   will-change: animation;
   opacity: 1;
 }
+html body main .home .home-top .opening-animation .opening-animation-dark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  transition: 0.25s;
+}
 html body main .home .home-top .home-content {
   position: absolute;
   top: 50%;
@@ -623,8 +677,10 @@ html body main .home .home-top .home-content .text-area .top {
   font-size: 1.5rem;
   letter-spacing: 15px;
   word-spacing: 20px;
+  color: black;
+  transition: 0.25s;
 }
-html body main .home .home-top .home-content .text-area .border {
+html body main .home .home-top .home-content .text-area .middle-border {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -632,6 +688,7 @@ html body main .home .home-top .home-content .text-area .border {
   width: 400px;
   height: 1px;
   background-color: black;
+  transition: 0.25s;
 }
 html body main .home .home-top .home-content .text-area .bottom {
   position: absolute;
@@ -646,6 +703,8 @@ html body main .home .home-top .home-content .text-area .bottom {
   line-height: 50px;
   font-size: 1rem;
   letter-spacing: 10px;
+  color: black;
+  transition: 0.25s;
 }
 html body main .home .home-top .home-content .app {
   width: 100%;
