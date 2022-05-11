@@ -130,6 +130,37 @@ html body header .header-content a {
 html body header .header-content a:hover {
   background-color: rgba(128, 128, 128, 0.5);
 }
+html body header .header-home-button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50px;
+  right: 0;
+  transition: 0.25s;
+  cursor: pointer;
+}
+html body header .header-home-button:hover .header-home-button-content {
+  border: 1px solid #c6e6ef;
+}
+html body header .header-home-button .header-home-button-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  transition: 0.25s;
+}
+html body header .header-home-button .header-home-button-content svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+}
 html body main {
   height: 100%;
   position: absolute;

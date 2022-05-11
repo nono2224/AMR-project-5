@@ -1,4 +1,5 @@
 $(".header-button").on("click", header_open_close);
+$(".header-home-button").on("click", go_home);
 $(".app-one").on("click", go_page_one);
 $(".app-two").on("click", go_page_two);
 $(".app-three").on("click", go_page_three);
@@ -50,6 +51,7 @@ function page_transition_header_cover() {
     $("header").css("left", "calc(50px - 100vw)");
     $(".header-content").css("opacity", "0");
     $(".header-button").css("opacity", "0");
+    $(".header-home-button").css("opacity", "0");
     $(".header-button-content-border-one").css("opacity", "1");
     $(".header-button-content-border-two-one").css("transform", "translate(-50%,-50%)");
     $(".header-button-content-border-two-two").css("transform", "translate(-50%,-50%)");
@@ -61,6 +63,7 @@ function page_transition_header_cover() {
     function page_transition_header_cover_close() {
         $("header").css("width", "100%");
         $(".header-button").css("opacity", "1");
+        $(".header-home-button").css("opacity", "1");
         clearInterval(timer_page_transition_header_cover);
     }
 }
