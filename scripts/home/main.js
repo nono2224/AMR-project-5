@@ -34,6 +34,7 @@ function start_scroll_timer() {
 
     function start_scroll() {
         $(".home").css("overflow-y", "scroll");
+        clearInterval(timer_start_scroll_timer);
     }
 }
 
