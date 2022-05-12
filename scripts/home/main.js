@@ -29,6 +29,14 @@ $(window).keydown(function(e) {
 var header_open_close_check = 0;
 var dark_mode_check = 0;
 
+function start_scroll_timer() {
+    var timer_start_scroll_timer = setInterval(start_scroll, 3500);
+
+    function start_scroll() {
+        $(".home").css("overflow-y", "scroll");
+    }
+}
+
 function header_open_close() {
     if (header_open_close_check == 0) {
         $("header").css("left", "calc(40vw - 100vw)");
@@ -196,3 +204,5 @@ function dark_mode_change() {
         dark_mode_check = 0;
     }
 }
+
+start_scroll_timer();

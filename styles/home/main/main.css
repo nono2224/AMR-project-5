@@ -222,7 +222,7 @@ html body main .home {
   height: 100%;
   top: 0;
   left: 0;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
   scroll-behavior: smooth;
   background-color: white;
